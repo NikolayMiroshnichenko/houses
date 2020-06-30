@@ -10,6 +10,10 @@ a {
 li {
     list-style-type: none;
 }
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 ::-webkit-scrollbar {
     width: 10px; 
@@ -155,9 +159,203 @@ li {
 }
 .main-wrapper {
     width: 100%;
-    height: 720px;
+    height: 820px;
     background-image: url(../img/main/main-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 100%;
+    margin-bottom: 100px;
+}
+.main {
+    position: relative;
+    padding-top: 60px;
+}
+.main-text {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    padding: 10px 30px;
+    background-image: url(../img/main/text-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.main-title {
+    font-size: 48px;
+    color: rgb(41, 105, 158);
+    line-height: 1.06;
+    font-family: 'HouschkaRoundedAlt 5';
+    padding: 20px 250px 20px 0;
+    letter-spacing: -0.7px;
+}
+.main-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    width: 670px;
+}
+.main-list__text {
+    margin: 0 25px;
+    position: relative;
+    padding-left: 130px;
+    font-weight: 600;
+    font-style: italic;
+}
+.main-list__text::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/main/1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.main-list__text:nth-child(2)::before {
+    background-image: url(../img/main/2.png);
+}
+.main-container {
+    display: flex;
+    align-items: center;
+}
+.main-btn {
+    position: relative;
+    display: block;
+    background: -webkit-linear-gradient( 90deg, rgb(247,127,4) 0%, rgb(253,187,28) 100%);
+    box-shadow: 0px 9px 47px rgba(252, 174, 22, 0.52);
+    border-radius: 50px;
+    position: relative;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 32px 100px 32px 70px;
+    font-size: 14px;
+    letter-spacing: 1.7px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 30px;
+}
+.main-btn::before {
+    position: absolute;
+    content: "";
+    right: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/main/arrow.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.main-btn:hover {
+    opacity: 0.7;
+}
+.main-price {
+    padding-top: 10px;
+}
+.main-price__text {
+    font-size: 14px;
+    color: rgb(21, 65, 101);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.main-price__price {
+    font-size: 42px;
+    font-family: "HouschkaRoundedAlt";
+    color: rgb(55, 164, 255);
+    font-weight: 500;
+}
+.discount {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    color: #ffffff;
+    top: 100px;
+    right: 0;
+    width: 160px;
+    height: 160px;
+    background-image: url(../img/main/discount.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.discount-text {
+    font-size: 18px;
+}
+.discount-тumber {
+    font-size: 40px;
+}
+.discount-item {
+    position: absolute;
+    font-size: 18px;
+    left: 20px;
+    top: 68px;
+}
+.video {
+    position: relative;
+    margin-bottom: 100px;
+}
+.video-title {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(41, 105, 158);
+    line-height: 1.06;
+    letter-spacing: -0.7px;
+    font-family: 'HouschkaRoundedAlt 5';
+    margin-bottom: 80px;
+}
+.video-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 940px;
+    margin: 0 auto;
+    height: 456px;
+    background: url(../img/video/video-bg.png) no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 60px;
+}
+.video-block__text {
+    position: relative;
+    padding: 10px 30px;
+    display: inline-block;
+    background-image: url(../img/video/text-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.4;
+    margin-left: 20px;
+}
+.video-link a {
+    font-size: 0;
+    display: block;
+    width: 160px;
+    height: 160px;
+    background-image: url(../img/video/play-video.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.set-title {
+    font-family: "HouschkaRoundedAlt 7";
+    text-align: center;
+    font-size: 36px;
 }
