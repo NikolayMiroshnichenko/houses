@@ -13,6 +13,7 @@ li {
 body {
     max-width: 1920px;
     margin: 0 auto;
+    /* background-color: #ededed; */
 }
 
 ::-webkit-scrollbar {
@@ -308,7 +309,7 @@ body {
 }
 .video {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 }
 .video-title {
     text-align: center;
@@ -353,9 +354,218 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    transition: all 0.3s;
+}
+.video-link a:hover {
+    transform: scale(1.04);
 }
 .set-title {
     font-family: "HouschkaRoundedAlt 7";
     text-align: center;
     font-size: 36px;
+    margin-bottom: 40px;
+}
+.set-list {
+    display: flex;
+    justify-content: space-between;
+}
+.set-list li {
+    position: relative;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.set-list__icon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(10, 79, 145, 0.2);
+    margin-bottom: 20px;
+}
+.set-list__icon img {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.set-list__text {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+.set-list__text span {
+    font-weight: 700;
+}
+.reasons {
+    width: 100%;
+    height: 1400px;
+    background-image: url(../img/reasons/reason-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+.reasons-title {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(41, 105, 158);
+    line-height: 1.06;
+    letter-spacing: -0.7px;
+    font-family: 'HouschkaRoundedAlt 5';
+    margin-bottom: 80px;
+    padding: 0 160px;
+}
+.reasons-list {
+    display: flex;
+    justify-content: space-between;
+}
+.reasons-list li {
+    width: 30%;
+}
+.reasons-list__icon {
+    position: relative;
+    margin: 0 auto;
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    border: 6px solid #ededed;
+    box-shadow: 0px 8px 16px 0px rgba(10, 79, 145, 0.2);
+    margin-bottom: 30px;
+}
+.reasons-list__icon img {
+    display: block;
+    width: 100%;
+}
+.reasons-list__three,
+.reasons-list__second,
+.reasons-list__first {
+    position: relative;
+}
+.reasons-list__three::before,
+.reasons-list__second::before,
+.reasons-list__first::before {
+    position: absolute;
+    content: "";
+    bottom: 50%;
+    right: 90%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    z-index: 99;
+}
+.reasons-list__first::before {
+    width: 58px;
+    height: 120px;
+    background-image: url(../img/reasons/number-1.png);
+}
+.reasons-list__second::before {
+    width: 86px;
+    height: 120px;
+    background-image: url(../img/reasons/number-2.png);
+}
+.reasons-list__three::before {
+    width: 86px;
+    height: 120px;
+    background-image: url(../img/reasons/number-2.png);
+}
+.reasons-list__title {
+    color:#46a8ed;
+    text-align: center;
+    padding: 0 60px;
+    margin-bottom: 20px;
+    height: 60px;
+}
+.reasons-list__text {
+    font-weight: 400;
+    text-align: center;
+}
+.revievs-wrapper {
+    width: 100%;
+    background-image: url(../img/reviews/revievs-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+.revievs-title {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(41, 105, 158);
+    line-height: 1.06;
+    letter-spacing: -0.7px;
+    font-family: 'HouschkaRoundedAlt 5';
+    margin-bottom: 80px;
+    padding: 170px 160px 40px 160px; 
+}
+.revievs-list {
+    display: flex;
+    justify-content: space-between;
+} 
+.revievs-list li {
+    position: relative;
+    width: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+
+}
+.revievs-list__img {
+    position: relative;
+    margin-bottom: 50px;
+}
+.revievs-list__img img {
+    display: block;
+    width: 100%;
+    height: 194px;
+}
+.revievs-list__img::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -37px;
+    transform: translateX(-50%);
+    width: 74px;
+    height: 74px;
+    background-image: url(../img/reviews/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 99;
+}
+.revievs-list__content {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 20px 80px 20px;
+}
+.revievs-list__content h3 {
+    font-weight: bold;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.revievs-list__content p {
+    font-weight: 40px;
+    margin-bottom: 20px;
+}
+.revievs-list-name {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.revievs-list-name h3 {
+    color: #36a1ed;
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+}
+.revievs-list-name p {
+    color: #6d6d6d;
+    font-weight: 400;
+    margin: 0;
+    font-size: 14px;
 }
