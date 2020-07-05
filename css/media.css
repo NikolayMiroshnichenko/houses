@@ -392,6 +392,10 @@
         font-size: 22px;
         text-align: center;
     }
+    .slider-wrapper .product .info {
+        margin-right: 0;
+        padding: 10px;
+    }
     .slider-wrapper .product .info .item-1 {
         width: 40%;
         padding: 0;
