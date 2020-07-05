@@ -474,6 +474,9 @@
     .modal {
         width: 80%;
     }
+    .footer-links li:last-child {
+        margin-right: 0;
+    }
     .video-iframe {
         height: 15rem;
     }
