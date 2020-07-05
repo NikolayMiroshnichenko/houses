@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="fonts/TTNorms/stylesheet.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
 </head>
 <body class="container-max">
     <div class="header-wrapper">
@@ -55,6 +57,14 @@
             <p class="main-text">Дом мечты для вас и вашего ребенка</p>
             <h1 class="main-title">Развивающий и увлекательный
                 конструктор для детей и взрослых</h1>
+            <div class="main-img">
+                <div class="discount-mobil">
+                    <p class="discount-text">скидки</p>
+                    <p class="discount-тumber">42%</p>
+                    <p class="discount-item">до</p>
+                </div>
+                <img src="img/main/main-img.png" alt="">
+            </div>
             <ul class="main-list">
                 <li class="main-list__text">
                     Увлекательный для всей семьи
@@ -64,8 +74,8 @@
                 </li>
             </ul>
             <div class="main-container">
-                <div>
-                    <a href="#" class="main-btn">Выбрать румбокс</a>
+                <div class="main-container__btn">
+                    <a href="#slider-wrapper" class="main-btn anchors">Выбрать румбокс</a>
                 </div>
                 
                 <div class="main-price">
@@ -78,6 +88,29 @@
                 <p class="discount-тumber">42%</p>
                 <p class="discount-item">до</p>
             </div>
+            <div class="timer-wrapper">
+                <p class="timer-title">предложение действует еще:</p>
+                <div id="countdown" class="countdown timer">
+                    <div class="countdown-number">
+                        <span class="days countdown-time"></span>
+                        <span class="countdown-text">Дни</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="hours countdown-time"></span>
+                        <span class="countdown-text">Часы</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="minutes countdown-time"></span>
+                        <span class="countdown-text">Мин</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="seconds countdown-time"></span>
+                        <span class="countdown-text">Сек</span>
+                    </div>
+                </div>
+
+            </div>
+            
         </div>
     </section>
     <section class="video-wpapper">
@@ -149,11 +182,11 @@
             </li>
         </ul>
     </section>
-    <section class="slider-wrapper container">
+    <section class="slider-wrapper container" id="slider-wrapper">
         <h2 class="slider-wrapper__title">Выберите Румбокс мечты для вашего ребенка, друзей или на подарок</h2>
 
         <div class="product">
-            <div class="row">
+            <div class="row row-directions">
                 <div class="image">
                     <div class="sale"><p>топ <br/> продаж</p></div>
                     <div class="slider slider-for images owl-carousel owl-theme">
@@ -213,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row price-directions">
                         <div class="price">
                             <p class="text">Цена-сегодня:</p>
                             <div class="block">
@@ -221,14 +254,14 @@
                                 <p>699  <span>грн</span></p>
                             </div>
                         </div>
-                        <a href="#modal-1" data-name="Одноэтажный дом: Chocolate shop" class="open-popup btn">заказать со скидкой</a>
+                        <a href="#" data-name="Одноэтажный дом: Chocolate shop" class="open-popup btn">заказать со скидкой</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="product">
-            <div class="row">
+            <div class="row row-directions">
                 <div class="image">
                     <div class="sale"><p>топ <br/> продаж</p></div>
                     <div class="slider slider-for images owl-carousel owl-theme">
@@ -291,7 +324,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row price-directions">
                         <div class="price">
                             <p class="text">Цена:</p>
                             <div class="block">
@@ -306,7 +339,7 @@
         </div>
 
         <div class="product">
-            <div class="row">
+            <div class="row row-directions">
                 <div class="image">
                     <div class="sale-2"><p>новинка</p></div>
                     <div class="slider slider-for images owl-carousel owl-theme">
@@ -368,7 +401,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row price-directions">
                         <div class="price">
                             <p class="text">Цена:</p>
                             <div class="block">
@@ -383,7 +416,7 @@
         </div>
 
         <div class="product">
-            <div class="row">
+            <div class="row row-directions">
                 <div class="image">
                     <div class="sale"><p>топ <br/> продаж</p></div>
                     <div class="slider slider-for images owl-carousel owl-theme">
@@ -443,7 +476,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row price-directions">
                         <div class="price">
                             <p class="text">Цена:</p>
                             <div class="block">
@@ -458,7 +491,7 @@
         </div>
 
         <div class="product">
-            <div class="row">
+            <div class="row row-directions">
                 <div class="image">
                     <div class="sale-2"><p>новинка</p></div>
                     <div class="slider slider-for images owl-carousel owl-theme">
@@ -522,7 +555,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row price-directions">
                         <div class="price">
                             <p class="text">Цена:</p>
                             <div class="block">
@@ -537,7 +570,7 @@
         </div>
 
         <div class="product">
-            <div class="row">
+            <div class="row row-directions">
                 <div class="image">
                     <div class="slider slider-for images owl-carousel owl-theme">
                         <div class="item-image" style="background-image:url(./img/products/annas-pink-melody/1.jpg)"></div>
@@ -598,7 +631,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row price-directions">
                         <div class="price">
                             <p class="text">Цена:</p>
                             <div class="block">
@@ -613,7 +646,7 @@
         </div>
 
         <div class="product">
-            <div class="row">
+            <div class="row row-directions">
                 <div class="image">
                     <div class="sale"><p>топ <br/> продаж</p></div>
                     <div class="slider slider-for images owl-carousel owl-theme">
@@ -675,7 +708,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row price-directions">
                         <div class="price">
                             <p class="text">Цена:</p>
                             <div class="block">
@@ -841,8 +874,11 @@
         </ul>
     </footer>
 
-    <div class="popup-wrapper">
+    <div class="popup-wrapper" data-pupap="close">
         <div class="popup">
+            <span class="close-popup" data-pupap="close">
+                <div data-pupap="close"></div>
+            </span>
             <h2 class="popup-title">Заказать набор</h2>
             <h3 class="popup-name"></h3>
             <p class="popup-text">Заполните форму и нажмите кнопку «Заказать», мы с Вами свяжемся</p>
@@ -850,7 +886,7 @@
             <form action="" class="popap-form">
                 <input type="text" placeholder="Введите имя и фамилию" class="popup-input">
                 <input type="tel" placeholder="Введите Телефон" class="popup-input">
-                <button type="submit" class="popup-btn"></button>
+                <button type="submit" class="popup-btn">заказать</button>
             </form>
 
         </div>
@@ -862,6 +898,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/anchors.js"></script>
+    <script src="js/timer.js"></script>
+
 </body>
 </html>
 
