@@ -494,7 +494,7 @@ body {
 .reasons-list__three::before {
     width: 86px;
     height: 120px;
-    background-image: url(../img/reasons/number-2.png);
+    background-image: url(../img/reasons/number-3.png);
 }
 .reasons-list__title {
     color:#46a8ed;
@@ -522,8 +522,7 @@ body {
     line-height: 1.06;
     letter-spacing: -0.7px;
     font-family: 'HouschkaRoundedAlt 5';
-    margin-bottom: 80px;
-    padding: 170px 160px 40px 160px; 
+    padding: 190px 160px 60px 160px; 
 }
 .revievs-list {
     display: flex;
