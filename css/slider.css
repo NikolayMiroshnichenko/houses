@@ -278,9 +278,6 @@
     }
 }
 @media screen and (max-width: 360px) {
-    .reasons {
-        height: 1620px;
-    }
     .btn {
         width: 90%;
         font-size: 8px;
