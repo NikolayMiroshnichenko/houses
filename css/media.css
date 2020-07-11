@@ -10,9 +10,6 @@
     .slider-wrapper__title {
         font-size: 40px;
     }
-    .slider-wrapper__title {
-        padding: 0 100px;
-    }
     .logo {
         width: 180px;
     }
@@ -32,40 +29,6 @@
     .reasons-list__title {
         font-size: 18px;
         padding: 0 30px;
-    }
-    .slider-wrapper .product {
-        padding: 0 0 10px 0;
-    }
-    .slider-wrapper .product .image,
-    .slider-wrapper .product .content {
-        width: 48%;
-    }
-    .slider-wrapper .images {
-        width: 100%;
-        margin: 20px 0 0 0;
-    }
-    .slider-wrapper .thumbnail {
-        padding: 10px 0 0 0;
-    }
-    .slider-wrapper .product .content h3 {
-        font-size: 22px;
-    }
-    .slider-wrapper .sale-2,
-    .slider-wrapper .sale {
-        left: -50px;
-        top: -40px;
-    }
-    .text {
-        margin-bottom: 0;
-    }
-    .block {
-        flex-direction: column;
-    }
-    .btn {
-        white-space: nowrap;
-        height: 80px;
-        letter-spacing: 0;
-        line-height: 1;
     }
     .roombox-title {
         width: 720px;
@@ -167,41 +130,6 @@
     }
     .row-directions {
         flex-direction: column;
-    }
-    .slider-wrapper .product {
-        box-shadow: 0px 5px 27px 0px rgba(0, 0, 0, 0.05);
-        margin-bottom: 60px;
-    }
-    .slider-wrapper .product .image,
-    .slider-wrapper .product .content {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .slider-wrapper .images,
-    .slider-wrapper .item-image {
-        height: 380px;
-    }
-    .slider-wrapper .thumbnail {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-    }
-    .slider-wrapper .product .content h3 {
-        font-size: 28px;
-    }
-    .slider-wrapper .product .info .item-1 {
-        width: 46%;
-        font-size: 14px;
-    }
-    .slider-wrapper .owl-prev {
-        left: -20px;
-    }
-    .slider-wrapper .owl-next {
-        right: -20px;
-    }
-    .block {
-        flex-direction: row;
-        align-items: flex-start;
     }
     .revievs-title {
         margin-bottom: 40px;
@@ -377,72 +305,6 @@
     .reasons-list__text {
         font-size: 16px;
     }
-    .slider-wrapper__title {
-        padding: 0;
-        font-size: 26px;
-        margin-bottom: 40px;
-    }
-    .slider-wrapper .images,
-    .slider-wrapper .item-image {
-        height: 300px;
-    }
-    .slider-wrapper .thumbnail {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .slider-wrapper .product .image {
-        height: auto;
-    }
-    .slider-wrapper .product .content h3 {
-        font-size: 22px;
-        text-align: center;
-    }
-    .slider-wrapper .product .info {
-        margin-right: 0;
-        padding: 10px;
-    }
-    .slider-wrapper .product .info .item-1 {
-        width: 40%;
-        padding: 0;
-        font-size: 12px;
-    }
-    .slider-wrapper .product .info .item-2 {
-        width: 50%;
-    }
-    .slider-wrapper .owl-nav div {
-        top: 130px;
-    }
-    .slider-wrapper .owl-prev {
-        left: -16px;
-    }
-    .slider-wrapper .owl-next {
-        right: -16px;
-    }
-    .slider-wrapper .item-thumbnail {
-        width: 94px;
-        height: 88px;
-        margin: 0 6px 0 0;
-    }
-    .price-directions {
-        flex-direction: column;
-        align-items: center;
-    }
-    .text {
-        text-align: center;
-        margin-bottom: 14px;
-    }
-    .block {
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-    .slider-wrapper .btn {
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    .slider-wrapper .sale-2,
-    .slider-wrapper .sale {
-        left: -30px;
-    }
     .revievs-title {
         padding: 120px 0 0 0;
     }
@@ -496,4 +358,39 @@
     }
 
 }
+@media screen and (max-width: 360px) {
+    .main-text {
+        font-size: 12px;
+    }
+    .main-list__text {
+        font-size: 14px;
+    }
+    .video-link a {
+        width: 60px;
+        height: 60px;
+    }
+    .roombox-title {
+        width: 260px;
+    }
+    .video-block {
+        height: 140px;
+    }
+    .video-block__text {
+        font-size: 10px;
+    }
+    .reasons {
+        height: 1620px;
+    }
+    .roombox-list__title {
+        font-size: 14px;
+    }
+    .roombox-list li {
+        width: 100%;
+    }
+    .roombox-list__icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
 
