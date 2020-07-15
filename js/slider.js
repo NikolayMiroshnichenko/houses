@@ -27,3 +27,19 @@ productList.forEach(item => {
 });
 
 
+var slider = tns({
+  container: '.main-slide',
+  items: 1,
+  slideBy: 'page',
+  autoplay: true,
+  axis: "vertical",
+  touch: false,
+  swipeAngle: false,
+  speed: 400,
+  nav: false,
+  controls: false,
+  autoplayButton: false,
+  autoplayButtonOutput: false
+});
+
+

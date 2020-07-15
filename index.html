@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дом мечты для вас и вашего ребенка</title>
     <link rel="stylesheet" href="fonts/HouschkaRoundedAlt/stylesheet.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="fonts/TTNorms/stylesheet.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
 
 </head>
 <body class="container-max">
@@ -57,14 +58,67 @@
             <p class="main-text">Дом мечты для вас и вашего ребенка</p>
             <h1 class="main-title">Развивающий и увлекательный
                 конструктор для детей и взрослых</h1>
-            <div class="main-img">
-                <div class="discount-mobil">
-                    <p class="discount-text">скидки</p>
-                    <p class="discount-тumber">42%</p>
-                    <p class="discount-item">до</p>
+            <div class="main-slide-container">
+                <div class="main-slide">
+                    <div class="main-slide__item">
+                        <div class="discount">
+                            <p class="discount-text">скидки</p>
+                            <p class="discount-тumber">42%</p>
+                            <p class="discount-item">до</p>
+                        </div>
+                        <img src="img/main-slider/chocolate-shop.png" alt="">
+                    </div>
+                    <div class="main-slide__item">
+                        <div class="discount">
+                            <p class="discount-text">скидки</p>
+                            <p class="discount-тumber">42%</p>
+                            <p class="discount-item">до</p>
+                        </div>
+                        <img src="img/main-slider/first-meet.png" alt="">
+                    </div>
+                    <div class="main-slide__item">
+                        <div class="discount">
+                            <p class="discount-text">скидки</p>
+                            <p class="discount-тumber">42%</p>
+                            <p class="discount-item">до</p>
+                        </div>
+                        <img src="img/main-slider/give-you-happiness.png" alt="">
+                    </div>
+                    <div class="main-slide__item">
+                        <div class="discount">
+                            <p class="discount-text">скидки</p>
+                            <p class="discount-тumber">42%</p>
+                            <p class="discount-item">до</p>
+                        </div>
+                        <img src="img/main-slider/legend-of-the-blue-sea.png" alt="">
+                    </div>
+                    <div class="main-slide__item">
+                        <div class="discount">
+                            <p class="discount-text">скидки</p>
+                            <p class="discount-тumber">42%</p>
+                            <p class="discount-item">до</p>
+                        </div>
+                        <img src="img/main-slider/modern-style.png" alt="">
+                    </div>
+                    <div class="main-slide__item">
+                        <div class="discount">
+                            <p class="discount-text">скидки</p>
+                            <p class="discount-тumber">42%</p>
+                            <p class="discount-item">до</p>
+                        </div>
+                        <img src="img/main-slider/pink-loft.png" alt="">
+                    </div>
+                    <div class="main-slide__item">
+                        <div class="discount">
+                            <p class="discount-text">скидки</p>
+                            <p class="discount-тumber">42%</p>
+                            <p class="discount-item">до</p>
+                        </div>
+                        <img src="img/main-slider/sweet-words.png" alt="">
+                    </div>
                 </div>
-                <img src="" data-leazy="img/main/main-img.png" class="lazy-img" alt="">
             </div>
+             
             <ul class="main-list">
                 <li class="main-list__text">
                     Увлекательный для всей семьи
@@ -82,11 +136,6 @@
                     <p class="main-price__text">Цены:</p>
                     <p class="main-price__price">от 649 грн</p>
                 </div>
-            </div>
-            <div class="discount">
-                <p class="discount-text">скидки</p>
-                <p class="discount-тumber">42%</p>
-                <p class="discount-item">до</p>
             </div>
             <div class="timer-wrapper">
                 <p class="timer-title">предложение действует еще:</p>
@@ -196,7 +245,6 @@
                         <img src="" data-leazy="img/products/because-of-you/3.jpg" class="lazy-img" alt="">
                         <img src="" data-leazy="img/products/because-of-you/4.jpg" class="lazy-img" alt="">
                         <img src="" data-leazy="img/products/because-of-you/5.jpg" class="lazy-img" alt="">
-                        <img src="" data-leazy="img/products/because-of-you/6.jpg" class="lazy-img" alt="">
                     </div>
                 </div>
             </div>
@@ -1120,7 +1168,7 @@
 
             <form action="" class="popap-form">
                 <input type="text" placeholder="Введите имя и фамилию" class="popup-input">
-                <input type="tel" placeholder="Введите Телефон" class="popup-input">
+                <input type="tel" id="phone"placeholder="Введите Телефон" class="popup-input">
                 <button type="submit" class="popup-btn">заказать</button>
             </form>
 
@@ -1129,7 +1177,11 @@
 
     <div class="modal-overlay js-modal-overlay" data-close="close"></div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/jqvery.js"></script>
     <script src="js/siema.min.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/utils.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/lazy-load.js"></script>
     <script src="js/main.js"></script>

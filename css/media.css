@@ -13,6 +13,10 @@
     .logo {
         width: 180px;
     }
+    .main-slide-container {
+        right: 0;
+        bottom: 10%;
+    }
     .main-list {
         width: 500px;
     }
@@ -22,6 +26,10 @@
     }
     .main-list__text {
         padding-left: 90px;
+    }
+    .main-container {
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
     .reasons {
         height: 1100px;
@@ -44,6 +52,9 @@
     .video-iframe {
         height: 25rem;
     }
+    .btn {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 998px) {
     .container {
@@ -65,6 +76,9 @@
     .header-time-work {
         display: none;
     }
+    .main-slide-container {
+        bottom: 20%;
+    }
     .main-list {
         width: 450px;
         flex-direction: column;
@@ -77,10 +91,6 @@
     }
     .main-list__text:last-child {
         margin-bottom: 0;
-    }
-    .main-container {
-        flex-direction: column-reverse;
-        align-items: flex-start;
     }
     .main-price {
         display: flex;
@@ -191,7 +201,6 @@
     .container {
         width: 90%; 
     }
-    .discount,
     .header-phone::after,
     .header-phone::before,
     .header-links {
@@ -221,34 +230,31 @@
         width: 100%;
     }
     .main-title {
-        padding: 20px 0 60px 0;
+        padding: 20px 0 40px 0;
     }
-    .main-img {
-        display: block;
-        width: 112%;
-        transform: translateX(-6%);
-    }
-    .main-img img {
-        display: block;
+    .main-slide-container  {
+        position: static;
         width: 100%;
+        margin-bottom: 40px;
     }
-    .discount-mobil {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        font-weight: 700;
-        color: #ffffff;
-        top: 0;
-        right: 0;
-        transform: translateY(-40%);
-        width: 160px;
-        height: 160px;
-        background-image: url(../img/main/discount.png);
-        background-position: center;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+    .main-slide__item {
+        padding-top: 40px;
+    }
+    .discount {
+        width: 120px;
+        height: 120px;
+    }
+    .discount-text {
+        font-size: 16px;
+    }
+    .discount-тumber {
+        font-size: 28px;
+    }
+    .discount-item {
+        left: 14px;
+        top: 48px;
+        font-size: 16px;
+        left: 14px;
     }
     .main-list {
         width: 100%;
@@ -359,6 +365,9 @@
 
 }
 @media screen and (max-width: 360px) {
+    .header-phone__item {
+        font-size: 14px;
+    }
     .main-text {
         font-size: 12px;
     }
@@ -390,6 +399,13 @@
     .roombox-list__icon {
         width: 70px;
         height: 70px;
+    }
+    .popup-name {
+        font-size: 12px;
+    }
+    .popup-text {
+        font-size: 12px;
+        padding: 0 15px 15px ;
     }
 }
 
