@@ -52,9 +52,6 @@
     .video-iframe {
         height: 25rem;
     }
-    .btn {
-        font-size: 12px;
-    }
 }
 @media screen and (max-width: 998px) {
     .container {
