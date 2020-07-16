@@ -31,6 +31,7 @@ var slider = tns({
   container: '.main-slide',
   items: 1,
   slideBy: 'page',
+  autoplayTimeout: 2800,
   autoplay: true,
   axis: "vertical",
   touch: false,

@@ -692,6 +692,7 @@ select {
     -moz-appearance: none;
     appearance: none;
     cursor: pointer;
+    margin-top: 10px;
 }
 .select {
     display: block;
